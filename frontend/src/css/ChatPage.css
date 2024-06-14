@@ -1,0 +1,149 @@
+.title {
+  text-align: center;
+}
+
+.message-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.message-footer button {
+  background-color: #000000;
+  color: white;
+}
+
+.chat-container {
+  padding: 20px;
+}
+
+.message-list {
+  margin-bottom: 20px;
+}
+
+.message .user-name {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  margin-top: 0;
+}
+
+.message .message-text {
+  display: inline;
+  margin-top: 0;
+}
+
+.message {
+  padding: 10px;
+  border: 1px solid #000000;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+}
+
+.message img {
+  max-width: 100%;
+  height: auto;
+}
+
+form:hover {
+  background-color: #ffffff;
+}
+
+.text-label {
+  color: #000000;
+  margin: 10px 0 0;
+}
+
+.char-count {
+  color: #484848;
+}
+
+.char-count.exceeded {
+  color: red;
+}
+
+.file-upload-container {
+  margin-bottom: 10px;
+}
+
+.file-upload-label {
+  margin-right: 10px;
+}
+
+.file-upload-label .file-name {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.uploading-message {
+  font-style: italic;
+  color: #555555;
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .form-desk {
+    display: flex;
+    justify-content: center;
+  }
+
+  .message {
+    margin: 30px;
+    padding: 30px;
+  }
+
+  .message-footer button {
+    font-size: 20px;
+  }
+
+  .message .user-name {
+    font-size: 30px;
+    font-weight: 200;
+  }
+
+  .text-label {
+    color: #000000;
+    margin: 10px 0 10px;
+  }
+
+  .message-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .message {
+    padding: 10px;
+    width: 70%;
+  }
+
+  .chat-container {
+    background-image: url("../assets/chat3.png");
+  }
+}
+
+@media (min-width: 1025px) {
+  .form-desk {
+    display: flex;
+    justify-content: center;
+  }
+
+  .message-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .message {
+    width: 500px;
+  }
+
+  .chat-container {
+    background-image: url("../assets/chat3.png");
+    background-position: top;
+  }
+}

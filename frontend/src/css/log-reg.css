@@ -1,0 +1,147 @@
+.recevie h3 {
+  color: black;
+}
+
+.fill-title h3 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.fill-in {
+  background-color: white;
+  box-shadow: 10px 10px 8px 10px #888888;
+  padding: 30px;
+  margin: 20px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.fill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding: 5px 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="text"]:active,
+input[type="password"]:active {
+  background: none;
+  outline: none;
+}
+
+.custom-file-input input[type="file"] {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding: 5px 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media (min-width:760px) and (max-width: 1024px) {
+  .input-icon {
+    width: 34px;
+    height: 34px;
+    margin: 10px 10px 10px 0;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .fill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 60px 100px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .input-icon {
+    width: 34px;
+    height: 34px;
+    margin: 10px 10px 10px 0;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .fill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 10px 100px;
+  }
+
+  .fill-in {
+    width: 600px;
+  }
+
+  .fill-title {
+    text-align: center;
+  }
+
+  .fill-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fill-img img {
+    width: 60%;
+  }
+}

@@ -1,0 +1,420 @@
+:root {
+  --icon-color: #333;
+  --icon-color-hover: #a1a5a9;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #000000;
+  font-size: 30px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 4px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 4px;
+  color: #333;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.arrow-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.arrow-more-draw {
+  margin-top: 20px;
+}
+
+.fa-chevron-down {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.arrow-more p {
+  margin-bottom: 20px;
+}
+
+.user-button {
+  padding: 10px 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 15px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 500;
+}
+
+.user-button:hover {
+  background-color: #333;
+}
+
+.fill-button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Bodoni Moda", serif;
+}
+
+.fill-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.container-page {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-page h2 {
+  margin-bottom: 20px;
+}
+
+#newMessageInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 90%;
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff;
+}
+
+#newMessageInput:focus {
+  outline: none;
+  border-color: #6f6f6f;
+}
+
+.my-form {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.friends-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 400px;
+  overflow: auto;
+}
+
+.friend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+}
+
+.profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: solid 1px #878787;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#newMessageInput.searchTerm {
+  border: none;
+}
+
+.app-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.user-info-container {
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.fas,
+.far,
+.fab {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--icon-color);
+}
+
+.fas:hover,
+.far:hover,
+.fab:hover {
+  color: var(--icon-color-hover);
+}
+
+@media (min-width:760px) and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .arrow-more {
+    margin-top: 10px;
+  }
+
+  .fa-chevron-down {
+    font-size: 30px;
+  }
+
+  .user-button {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  .fill-button {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  #newMessageInput {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .my-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 30px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .search-bar {
+    width: 73%;
+  }
+
+  .search-bar.my {
+    width: 100%;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .loading-container {
+    padding: 20px;
+  }
+
+  .user-info-container {
+    width: 70%;
+    margin: 30px;
+  }
+
+  .fas,
+  .far,
+  .fab {
+    font-size: 25px;
+
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .arrow-more {
+    margin-top: 10px;
+  }
+
+  .fa-chevron-down {
+    font-size: 30px;
+  }
+
+  .arrow-more-draw {
+    display: none;
+  }
+
+  .user-button {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  .fill-button {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  .container-page {
+    max-height: calc(100vh - 510px);
+    overflow-y: auto;
+  }
+
+  #newMessageInput {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .my-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 30px;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .search-bar {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .search-container {
+    width: 500px;
+  }
+
+  .user-info-container {
+    width: 500px;
+    margin-top: 30px;
+    background-color: #fff;
+  }
+
+  .fas,
+  .far,
+  .fab {
+    font-size: 25px;
+  }
+}

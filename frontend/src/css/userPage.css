@@ -1,0 +1,31 @@
+.user-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info a {
+  color: rgb(0, 0, 0);
+}
+
+.no-posts-message {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+@media (min-width:760px) and (max-width: 1024px) {
+  .header-container {
+    margin: 30px;
+  }
+
+  .FriendRequestbutton {
+    margin-left: 30px;
+  }
+}
